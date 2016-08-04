@@ -43,11 +43,11 @@ img1(lower_limit:upper_limit, right_limit) = 1;
 img1(lower_limit, left_limit:right_limit) = 1;
 img1(upper_limit, left_limit:right_limit) = 1;
 
-img2(lower_limit:upper_limit, left_limit) = 1;
-img2(lower_limit:upper_limit, right_limit) = 1;
-
-img2(lower_limit, left_limit:right_limit) = 1;
-img2(upper_limit, left_limit:right_limit) = 1;
+% img2(lower_limit:upper_limit, left_limit) = 1;
+% img2(lower_limit:upper_limit, right_limit) = 1;
+% 
+% img2(lower_limit, left_limit:right_limit) = 1;
+% img2(upper_limit, left_limit:right_limit) = 1;
 
 red = img1;
 green = img2;

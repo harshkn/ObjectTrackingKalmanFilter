@@ -23,11 +23,11 @@ half_ob_height = (ob_height-1)/2;
 half_ob_width = (ob_width-1)/2;
 
 c = round(min(max(1, x(2)), im_height));
-r = round(min(max(1, x(2)), im_width));
+r = round(min(max(1, x(1)), im_width));
 
 %search region 
-H = 35;
-W = 35;
+H = 120;
+W = 120;
 
 height_begin  = min(im_height - half_ob_height, max(half_ob_height+1, r -H));
 height_end = max(half_ob_height + 1, min(im_height - half_ob_height, r + H));

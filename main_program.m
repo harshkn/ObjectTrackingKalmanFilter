@@ -1,4 +1,4 @@
-function a5p2
+% function main_program
   % load images from movie
   [images, numFrames, height, width] = avi2images('Ball1_raw.avi');
   
@@ -6,12 +6,19 @@ function a5p2
   [A, W, H, Q] = init_ball_model();
 
   %initial state estimate
-  x0 = [200; 200; 200; 200];
+  x0 = [150; 350; 150; 350];
 
 
   % load ball
   ball = imread('ball.png');
-  ball = im2double(ball)*255;
+%   imshow(ball)
+%   ball = im2double(ball)*255;
+%     newRange = 1.1; 
+%     imgMin = double(min(ball(:)));
+%     imgMax = double(max(ball(:)));
+%     ball = (ball - imgMin) / (imgMax - imgMin) * newRange;
+    ball = im2double(ball)*255;
+%     figure; imagesc(ball)
   
 
   % create handle to anonymous function
@@ -33,4 +40,4 @@ function a5p2
   % display result
   axis off
   movie(video)
-end
+% end
